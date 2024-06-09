@@ -25,7 +25,7 @@ public class ComparatorNomeCliente implements Comparator<Cliente>{
      * É um método utilizado para comparar o nome de dois clientes.
      * @param s1 Recebe a string do primeiro nome.
      * @param s2 Recebe a string do segundo nome.
-     * @return Retorna a diferença dos comprimentos em strings.
+     * @return Retorna um inteiro que representa a ordem alfabética dos nomes.
      */
     private static int compareStrings(String s1, String s2) {
         int len1 = s1.length();// Recebe o comprimento da primeira string

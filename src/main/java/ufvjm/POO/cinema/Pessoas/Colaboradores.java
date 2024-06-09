@@ -25,44 +25,44 @@ public class Colaboradores extends Pessoa {
         this.cargo = cargo;
     }
     /**
-     * 
-     * @return 
+     * Obtém a senha do funcionário.
+     * @return Retorna a senha do funcionário.
      */
     public String getSenha() {
         return senha;
     }
     /**
-     * 
-     * @param senha 
+     * Define a senha do funcionário.
+     * @param senha Estabelece a senha do funcionário.
      */
     public void setSenha(String senha) {
         this.senha = senha;
     }
     /**
-     * 
-     * @return 
+     * Obtém o cargo do funcionário.
+     * @return Retorna o cargo do funcionário.
      */
     public String getCargo() {
         return cargo;
     }
     /**
-     * 
-     * @param cargo 
+     * Define o cargo do funcionário.
+     * @param cargo Estabelece o cargo do funcionário.
      */
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
     /**
-     * 
-     * @return 
+     * Retorna os dados do funcionário.
+     * @return Retorna o "nome" e o "CPF" do funcionário em como uma string.
      */
     @Override
     public String exibirDados(){
        return "Funcionario: " + nome + ", CPF: " + CPF + '}';
     }
     /**
-     * 
-     * @return 
+     * Exibe os dados do colaborador como uma string.
+     * @return Retorna uma string com os dados do colaborador.
      */
     @Override
     public String toString() {

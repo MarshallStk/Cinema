@@ -103,7 +103,7 @@ public class GerenciamentoVendas {
         this.totalVenda = totalVenda;
     }
     /**
-     * 
+     * Neste método, será atribuido o cliente os produtos que ele está comprando.
      * @param cliente O cliente que está realizando a compra.
      * @param filme O filme para o qual os ingressos estão sendo comprados.
      * @param alimento O alimento sendo comprado.

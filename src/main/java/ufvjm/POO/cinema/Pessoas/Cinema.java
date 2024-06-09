@@ -54,7 +54,7 @@ public class Cinema {
     
     //========================== Métodos de Atores ========================== 
     /**
-     * 
+     * Este método é utilizado para verificar se o cliente está cadastrado com base em seu CPF.
      * @param cpf informa o CPF do cliente.
      * @return Verifica se o CPF é o do cliente que está sendo buscado.
      */
@@ -103,7 +103,7 @@ public class Cinema {
         System.out.println("Funcionário não encontrado!");
     }
     /**
-     * 
+     * Este método é utilizado para editar o funcionário com base em seu CPF.
      * @param cpf Informa o CPF do colaborador.
      * @param novaSenha Estabelece a nova senha definida.
      */
