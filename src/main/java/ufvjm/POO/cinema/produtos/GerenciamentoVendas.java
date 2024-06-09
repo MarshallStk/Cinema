@@ -113,10 +113,13 @@ public class GerenciamentoVendas {
      * @param valorAlimento O valor unitário de cada alimento.
      * @param tipoBalcao Qual balcão está sendo realizada a venda.
      */
-    public void realizarCompra(Cliente cliente, Filme filme, Alimento alimento, int quantidadeAssentos,int quantidadeAlimentos, double valorFilme, double valorAlimento, String tipoBalcao){
+  public void realizarCompra(Cliente cliente, Filme filme, Alimento alimento, int quantidadeAssentos,int quantidadeAlimentos, double valorFilme, double valorAlimento, String tipoBalcao){
         double vendasFilme = calcularValorTotal(quantidadeAssentos, valorFilme);
         double vendaAliementos = calcularValorTotal(quantidadeAlimentos, valorAlimento);
         double valorTotal = (quantidadeAssentos * valorFilme) + (quantidadeAlimentos * valorAlimento);
+        
+        int assentosAtuais = filme.getAssentos() - quantidadeAssentos;
+        int quantidadeAtuais = alimento.getQuantidade() - quantidadeAlimentos;
         
         
         cliente.adicionarCompras(valorTotal);
@@ -152,7 +155,10 @@ public class GerenciamentoVendas {
             System.out.println();
             
         Venda venda = new Venda(cliente.getNome(), filme.getNome(), alimento.getNome(), tipoBalcao, valorTotal);
-        this.vendas.add(venda);       
+        this.vendas.add(venda);
+        
+        filme.setAssentos(assentosAtuais);
+        alimento.setQuantidade(quantidadeAtuais);
     }
     /**
      * Obtem a lsita de venda.
